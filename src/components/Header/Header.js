@@ -8,8 +8,35 @@ import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyle
 const Header = () =>  (
  <Container>
   <Div1>
-    
+    <Link href="/">
+      <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "20px" }} />
+        <DiCssdeck size="3rem" /> <span>Portfolio</span>
+    </Link>
   </Div1>
+  <Div2>
+    <li>
+      <Link href="#projects">
+        <NavLink>Projects</NavLink>
+      </Link>
+      <Link href="#tech">
+        <NavLink>Tech</NavLink>
+      </Link>
+      <Link href="#about">
+        <NavLink>About</NavLink>
+      </Link>
+    </li>
+  </Div2>
+  <Div3>
+    <SocialIcons href="https://github.com/">
+      <AiFillGithub size="3rem" />
+    </SocialIcons>
+    <SocialIcons href="https://www.linkedin.com/in/">
+      <AiFillLinkedin size="3rem" />
+    </SocialIcons>
+    <SocialIcons href="https://www.instagram.com/">
+      <AiFillInstagram size="3rem" />
+    </SocialIcons>
+  </Div3>
  </Container>
 );
 
